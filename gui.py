@@ -1,8 +1,8 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout,\
-    QMessageBox, QSpacerItem, QSizePolicy, QDialog
+    QMessageBox, QSpacerItem, QSizePolicy
 from PyQt5.QtGui import QPixmap
-from main import process_images_in_folder, fetch_and_split_image  # Import functions from your main script
+from main import process_images_in_folder, fetch_and_split_image
 
 
 class ImageProcessorGUI(QWidget):
