@@ -64,6 +64,9 @@ def process_images_in_folder(input_folder, output_folder):
 
     except Exception as e:
         print(f"Error processing images in folder: {e}")
+        return False
+
+    return True
 
 
 def fetch_and_split_image(url, output_folder):
@@ -96,9 +99,13 @@ def fetch_and_split_image(url, output_folder):
 
     except requests.exceptions.RequestException as e:
         print(f"Error fetching image: {e}")
+        return False
 
     except Exception as e:
         print(f"Error processing image: {e}")
+        return False
+
+    return True
 
 
 if __name__ == "__main__":
