@@ -1,4 +1,6 @@
-![Logo](ASSETS/logo.png)
+<p align="center">
+  <img src="ASSETS/logo.png" alt="Logo" />
+</p>
 
 ## Overview
 
