@@ -1,74 +1,91 @@
-## Midjourney Image Splitter ✂️
+![Logo](ASSETS/logo.png)
 
-This Python application with a user-friendly GUI allows you to easily split your Midjourney images into four quadrants, perfect for further editing or experimentation.
+## Overview
 
-### Features:
+Midjourney Image Splitter is a Python application designed to split images into quadrants. It offers both a command-line interface and a graphical user interface (GUI) built with PyQt5. Users can process images from local directories or directly from URLs.
 
-* Split individual images from a folder.
-* Process multiple images at once.
-* Fetch an image from a URL and split it into quadrants.
-* Save the split quadrants to a designated output folder.
+## Features
 
-### Installation
+- Split images into four quadrants
+- Process images from local folders
+- Fetch and split images from URLs
+- Simple and intuitive GUI
 
-1. **Clone the repository:**
+## Installation
 
-   ```bash
-   git clone https://github.com/Nafi7393/Midjourney-Image-Splitter
-   ```
+### Requirements
 
-2. **Install dependencies:**
+- Python 3.7+
+- `requests` library
+- `Pillow` library
+- `PyQt5` library
 
-   ```bash
-   cd Midjourney-Image-Splitter
-   pip install -r requirements.txt
-   ```
+### Installation Steps
 
-### Usage
+1. Clone the repository:
 
-**From GUI:**
+    ```bash
+    git clone https://github.com/Nafi7393/Midjourney-Image-Splitter.git
+    cd Midjourney-Image-Splitter
+    ```
 
-The provided GUI application offers a user-friendly interface for splitting images. Simply:
+2. Install the dependencies:
 
-1. **Run the application:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-   ```bash
-   python gui.py
-   ```
+## Usage
 
-2. **Select input and output folders** for processing local images.
-3. **Enter the image URL** and output folder for processing an image from a URL.
-4. **Click the corresponding button** to initiate the splitting process.
+### Command Line
 
-### Example: Splitting an Image
-
-**Using GUI:**
-
-1. Open the application (`python gui.py`).
-2. In the "Input Folder Path" field, enter the path to your folder containing Midjourney images (e.g., "input").
-3. In the "Output Folder Path" field, enter the path to the folder where you want to save the split quadrants (e.g., "output").
-4. Click the "Process Local Images" button.
-
-**Using Script:**
+To process images in a folder:
 
 ```bash
-python main.py process_folder input_folder output_folder
+python main.py
 ```
 
-Replace `input_folder` with the actual path to your folder containing Midjourney images and `output_folder` with the desired path to save the split quadrants.
+This will process images in the `input` folder and save the quadrants in the `output` folder.
 
-**Visual Example:**
+### GUI
 
-| **Original Image** | **Top-Left Quadrant** | **Top-Right Quadrant** | **Bottom-Left Quadrant** | **Bottom-Right Quadrant** |
-|---|---|---|---|---|
-| [Image of Full Midjourney Image](path/to/your/logo.png) | [Image of Top-Left Quadrant](path/to/your/gui_image.png) | [Image of Top-Right Quadrant](path/to/your/gui_image.png) | [Image of Bottom-Left Quadrant](path/to/your/gui_image.png) | [Image of Bottom-Right Quadrant](path/to/your/gui_image.png) |
+To start the GUI, run:
 
-**Note:** Replace the image paths in the table with the actual locations of your logo and an example split image (adjust paths as needed).
+```bash
+python gui.py
+```
 
-### Contributing
+#### GUI Overview
 
-We welcome contributions to this project! Feel free to fork the repository, make changes, and submit a pull request.
+![GUI](ASSETS/gui-app.png)
 
-### License
+1. **Local Image Processing:**
+    - Enter the path to the input folder.
+    - Enter the path to the output folder.
+    - Click on "Process Local Images" to split all images in the input folder.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+2. **URL Image Processing:**
+    - Enter the URL of the image.
+    - Enter the path to the output folder.
+    - Click on "Process Image from URL" to fetch and split the image.
+
+## Example
+
+![Original Image](ASSETS/example.png)
+
+
+## Contributing
+
+1. Fork the repository.
+2. Create your feature branch: `git checkout -b feature/my-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/my-feature`
+5. Open a pull request.
+
+## Acknowledgements
+
+- PyQt5 Documentation
+- Pillow Documentation
+
+For any questions or issues, please open an issue on the GitHub repository
+

@@ -28,7 +28,7 @@ class ImageProcessorGUI(QWidget):
         self.process_local_button = QPushButton("Process Local Images")
 
         # Logo
-        self.logo_pix = QPixmap("ASSETS & DEMO/logo.png")
+        self.logo_pix = QPixmap("ASSETS/logo.png")
         self.logo_label = QLabel()  # Replace with your logo
         self.logo_label.setPixmap(self.logo_pix)
 
